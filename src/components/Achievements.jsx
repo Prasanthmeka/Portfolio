@@ -1,5 +1,6 @@
 import React from 'react';
 import { Trophy, Award, Lightbulb, Rocket, Briefcase } from 'lucide-react';
+import ThreeDTilt from './ThreeDTilt';
 
 const achievementsList = [
   {
@@ -66,24 +67,29 @@ export default function Achievements() {
           {achievementsList.map((ach, idx) => {
             const Icon = ach.icon;
             return (
-              <div 
-                key={ach.title}
-                className="reveal achievement-card glass-card rounded-2xl p-6 text-center group cursor-pointer"
-                style={{ animationDelay: `${idx * 0.1}s` }}
+              <ThreeDTilt 
+                key={ach.title} 
+                maxTilt={12} 
+                className="reveal-scale h-full rounded-2xl overflow-hidden"
               >
                 <div 
-                  className={`w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br ${ach.colors} flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}
-                  style={{ boxShadow: `0 0 30px ${ach.shadow}` }}
+                  className="achievement-card glass-card rounded-2xl p-6 text-center group cursor-pointer h-full"
+                  style={{ animationDelay: `${idx * 0.08}s` }}
                 >
-                  <Icon className="w-8 h-8 md:w-10 md:h-10 text-white" />
+                  <div 
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br ${ach.colors} flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}
+                    style={{ boxShadow: `0 0 30px ${ach.shadow}` }}
+                  >
+                    <Icon className="w-8 h-8 md:w-10 md:h-10 text-white" />
+                  </div>
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+                    {ach.title}
+                  </h3>
+                  <p className="text-sm text-gray-400">
+                    {ach.description}
+                  </p>
                 </div>
-                <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
-                  {ach.title}
-                </h3>
-                <p className="text-sm text-gray-400">
-                  {ach.description}
-                </p>
-              </div>
+              </ThreeDTilt>
             );
           })}
         </div>
