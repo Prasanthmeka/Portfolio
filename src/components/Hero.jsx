@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Code, Star, GraduationCap, Briefcase } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './Icons';
+import { Code, Star, Briefcase } from 'lucide-react';
 import ThreeDTilt from './ThreeDTilt';
 
 const words = ["Software Development Engineer", "Java Full Stack Developer", "React Developer", "Collaborative Problem Solver"];
@@ -89,41 +88,6 @@ export default function Hero() {
               "Building Scalable & High-Quality Enterprise Web Applications"
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
-                href="#projects"
-                className="btn-neon px-8 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 text-center"
-              >
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                className="btn-neon px-8 py-3 border border-cyan-500/50 rounded-full text-cyan-400 font-semibold hover:bg-cyan-500/10 transition-all duration-300 text-center"
-              >
-                Let's Connect
-              </a>
-            </div>
-
-            <div className="flex gap-4 justify-center lg:justify-start pt-4">
-              <a
-                href="https://github.com/Prasanthmeka"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 glass-card rounded-full hover:neon-glow transition-all duration-300 group"
-                aria-label="GitHub"
-              >
-                <GithubIcon className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-colors" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/prasanth-meka/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 glass-card rounded-full hover:neon-glow transition-all duration-300 group"
-                aria-label="LinkedIn"
-              >
-                <LinkedinIcon className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-colors" />
-              </a>
-            </div>
           </div>
 
           {/* Right Column: Profile Card with 3D Tilt */}
