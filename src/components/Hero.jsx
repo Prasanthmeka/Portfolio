@@ -132,7 +132,7 @@ export default function Hero() {
                     <img
                       alt="Meka Prasanth"
                       className="object-cover w-full h-full"
-                      src="./images/prasanth.jpg"
+                      src="./images/prasanth.jpg?v=2"
                     />
                   </div>
                 </div>
