@@ -89,7 +89,7 @@ export default function Contact() {
                   <span className="text-sm text-gray-300 font-semibold group-hover:text-white">GitHub</span>
                 </a>
                 <a 
-                  href="https://www.linkedin.com/in/prasanth-meka/" 
+                  href="https://www.linkedin.com/in/prasanth-meka-7a2ab8253" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex-1 flex items-center justify-center gap-2 p-4 glass rounded-xl hover:neon-glow transition-all duration-300 group border border-white/5"

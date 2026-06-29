@@ -28,7 +28,7 @@ export default function Footer() {
               <GithubIcon className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-colors" />
             </a>
             <a 
-              href="https://www.linkedin.com/in/prasanth-meka/" 
+              href="https://www.linkedin.com/in/prasanth-meka-7a2ab8253" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="p-3 glass rounded-full hover:neon-glow transition-all duration-300 group border border-white/5"
